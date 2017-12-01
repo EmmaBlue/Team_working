@@ -8,6 +8,16 @@
 
 }
 
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('raleway-regular-webfont.woff2') format('woff2'),
+         url('raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 @font-face {
     font-family: 'merriweatherregular';
     src: url('../fonts/merriweather-regular-webfont.woff2') format('woff2'),
@@ -30,11 +40,13 @@
 
 $primary:#ffffff;
 $secondary: #00C5C5;
-$textColor: #606060;
+$textColor: #676767;
 $selectedColor: #adc7de;
 $heading: 'ralewaymedium', sans-serif;
-$subheading:'ralewaybold', sans-serif;
+$subheading:'merriweatherregular', serif;
+$boldHeading: 'ralewaybold', sans-serif;
 $regText: 'merriweatherregular', serif;
+$thinText: 'ralewayregular', sans-serif;
 
 body {
 
@@ -47,7 +59,7 @@ p {
 }
 h5 {
 
-  font-family: $subheading;
+  font-family: $boldHeading;
 }
 //Navigation
 
@@ -76,6 +88,7 @@ h5 {
 .navbar-custom ul.nav li a {
 
   color: $primary;
+  font-family: $thinText;
 }
 
 .navbar-collapse {
@@ -91,10 +104,10 @@ h5 {
 
   .slogan h4 {
 
-    font-family: $regText;
+    font-family: $subheading;
     text-shadow: none;
     color: $textColor;
-    font-size: 0.9em;
+    font-size: 0.8em;
     text-align: center;
     margin: 1em;
   }
@@ -124,14 +137,14 @@ h5 {
   h2 {
 
     margin: 0 0 5px;
-    font-family: $heading;
-    color: $secondary;
+    font-family: $subheading;
+    color: $textColor;
     font-size: 2.25em;
   }
 
   .fa {
 
-    color: $regText;
+    color: $secondary;
   }
 }
 
@@ -168,8 +181,8 @@ h5 {
 
 #aboutDesc p {
 
-  font-family: $subheading;
-  color: $regText;
+  font-family: $thinText;
+  color: $secondary;
   font-size: 1.25em;
 }
 
@@ -222,18 +235,18 @@ h5 {
 .contact {
 
   background-color: $primary;
-  font-family: $subheading;
+  font-family: $thinText;
 
   input, textarea {
 
-    font-family: $regText;
+    font-family: $thinText;
 
   }
 
   button {
 
     background-color: $secondary;
-    font-family: $subheading;
+    font-family: $boldHeading;
   }
 }
 
