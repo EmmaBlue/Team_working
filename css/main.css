@@ -18,15 +18,6 @@
   src: url("../fonts/raleway-bold-webfont.woff2") format("woff2"), url("../fonts/raleway-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-body {
-  font-family: "merriweatherregular", serif; }
-
-p {
-  font-size: 0.9em; }
-
-h5 {
-  font-family: "ralewaybold", sans-serif; }
-
 .navbar-header {
   background-color: #00C5C5;
   color: #ffffff; }
@@ -38,6 +29,14 @@ h5 {
 .navbar {
   border-bottom: none; }
 
+.navbar-brand {
+  padding: 8px 15px;
+  font-size: 18px; }
+
+.navbar-toggle {
+  padding: 0px 6px;
+  font-size: 20px; }
+
 .navbar-nav {
   margin: 0px -15px; }
 
@@ -48,53 +47,121 @@ h5 {
 .navbar-collapse {
   border-top: none; }
 
+@media (max-width: 480px) {
+  .navbar-custom .nav.navbar-nav {
+    background-color: #00C5C5; } }
+@media (min-width: 767px) {
+  .navbar-custom.top-nav-collapse {
+    border-bottom: 1px solid #00C5C5; }
+
+  .navbar-custom ul.nav li a {
+    color: #676767; } }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .nav.navbar-nav {
+    background-color: #00C5C5;
+    color: #ffffff; } }
+@media screen and (min-width: 415px) and (max-width: 767px) {
+  .navbar-toggle {
+    font-size: 30px; }
+
+  .navbar-brand {
+    padding: 15px 15px; }
+    .navbar-brand img {
+      height: 1.9em; }
+
+  .navbar-custom ul.nav li a {
+    padding: 18px;
+    font-size: 1em; } }
+@media screen and (min-width: 768px) {
+  .navbar-brand {
+    padding: 0 0 0 0;
+    height: 40px; }
+    .navbar-brand img {
+      height: 2.25em; }
+
+  .navbar-custom ul.nav li a {
+    color: #646464; } }
+@media screen and (min-width: 1024px) {
+  .navbar-custom.top-nav-collapse ul.nav li a {
+    font-size: 0.95em; } }
 #intro.intro {
-  background: url(../img/promo-mobile.jpg) no-repeat top center;
-  padding: 10em 0 0 0; }
-  #intro.intro .slogan h4 {
-    font-family: "merriweatherregular", serif;
-    text-shadow: none;
-    color: #676767;
-    font-size: 0.8em;
-    text-align: center;
-    margin: 1em; }
+  background: url(../img/promo-mobile.jpg) no-repeat center right;
+  background-size: cover;
+  max-width: 100%; }
+  #intro.intro .slogan {
+    padding-top: 25%; }
+    #intro.intro .slogan h4 {
+      font-family: "merriweatherregular", serif;
+      text-shadow: none;
+      color: #676767;
+      font-size: 0.8em;
+      text-align: center;
+      margin: 1em; }
 
 #mainArrow {
   margin-top: 5em;
   margin-bottom: 1em; }
 
-.home-section {
-  padding-top: 2em;
-  padding-bottom: 0em; }
-
-.section-heading i {
-  margin-bottom: 0px; }
-.section-heading h2 {
-  margin: 0 0 5px;
-  font-family: "merriweatherregular", serif;
-  color: #676767;
-  font-size: 2.25em; }
-.section-heading .fa {
-  color: #00C5C5; }
-
-#projectPic {
-  height: 120px;
-  width: 200px;
-  background-color: #00C5C5;
-  border: 2px solid #ffffff; }
-
-#projectPic2 {
-  height: 120px;
-  width: 200px;
-  background-color: #00C5C5;
-  border: 2px solid #ffffff; }
-
-#projectPic3 {
-  height: 120px;
-  width: 200px;
-  background-color: #00C5C5;
-  border: 2px solid #ffffff; }
-
+@media screen and (min-width: 415px) and (max-width: 600px) {
+  #intro.intro {
+    background: url(../img/promo-smalltab.jpg) no-repeat center right;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%; }
+    #intro.intro .slogan {
+      padding-top: 45%; }
+      #intro.intro .slogan img {
+        height: 4.5em; }
+      #intro.intro .slogan h4 {
+        font-size: 1em; }
+    #intro.intro #mainArrow {
+      margin-top: 30%;
+      height: 2.5em; } }
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  #intro.intro {
+    background: url(../img/promo-tab.jpg) no-repeat center right;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%; }
+    #intro.intro .slogan {
+      padding-top: 30%; }
+      #intro.intro .slogan img {
+        height: 5.25em; }
+      #intro.intro .slogan h4 {
+        font-size: 1em; }
+    #intro.intro #mainArrow {
+      margin-top: 30%;
+      height: 3em; } }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #intro.intro {
+    background: url(../img/promo-desktop.jpg) no-repeat center right;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%; }
+    #intro.intro .slogan {
+      padding-top: 20%; }
+      #intro.intro .slogan img {
+        height: 5.25em; }
+      #intro.intro .slogan h4 {
+        font-size: 1em; }
+    #intro.intro #mainArrow {
+      margin-top: 30%;
+      height: 3em; } }
+@media screen and (min-width: 1025px) {
+  #intro.intro {
+    background: url(../img/promo-wide.jpg) no-repeat center right;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100%; }
+    #intro.intro .slogan {
+      padding-top: 0%; }
+      #intro.intro .slogan img {
+        height: 5.75em; }
+      #intro.intro .slogan h4 {
+        font-size: 1em; }
+    #intro.intro #mainArrow {
+      margin-top: 5%;
+      height: 3em; } }
 #aboutDesc p {
   font-family: "ralewayregular", sans-serif;
   color: #00C5C5;
@@ -122,6 +189,70 @@ h5 {
 .boxed-grey {
   border: 5px solid #ffffff; }
 
+@media screen and (min-width: 1280px) {
+  #aboutDesc p {
+    font-size: 1.5em; } }
+.home-section {
+  padding-top: 2em;
+  padding-bottom: 0em; }
+
+.section-heading i {
+  margin-bottom: 0px; }
+.section-heading h2 {
+  margin: 0 0 5px;
+  font-family: "merriweatherregular", serif;
+  color: #676767;
+  font-size: 2.25em; }
+.section-heading .fa {
+  color: #00C5C5; }
+
+@media screen and (min-width: 600px) {
+  #services p {
+    padding: 0px 1em; }
+  #services .service-icon img {
+    height: 3.25em; } }
+@media screen and (min-width: 768px) {
+  #services.home-section {
+    padding-top: 2em;
+    padding-bottom: 2em; } }
+@media screen and (min-width: 992px) {
+  #services h2 {
+    font-size: 2.5em; }
+  #services .service-icon img {
+    height: 4.75em; }
+
+  #services.home-section {
+    padding-top: 4em;
+    padding-bottom: 4em; } }
+.projectPic {
+  height: 120px;
+  width: 200px;
+  background-color: #00C5C5;
+  border: 2px solid #ffffff; }
+
+#lightbox {
+  position: fixed;
+  /* keeps the lightbox window in the current viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+  text-align: center;
+  z-index: 2; }
+
+#lightbox p {
+  text-align: right;
+  color: #fff;
+  margin-right: 20px;
+  font-size: 12px; }
+
+#lightbox img {
+  box-shadow: 0 0 25px #111;
+  -webkit-box-shadow: 0 0 25px #111;
+  -moz-box-shadow: 0 0 25px #111;
+  max-width: 940px; }
+
 .contact {
   background-color: #ffffff;
   font-family: "ralewayregular", sans-serif; }
@@ -130,6 +261,31 @@ h5 {
   .contact button {
     background-color: #00C5C5;
     font-family: "ralewaybold", sans-serif; }
+
+@media screen and (min-width: 768px) {
+  form#contact-form .form-group label {
+    font-size: 1em; }
+
+  #contact-form .form-group label {
+    font-size: 0.875em; } }
+@media screen and (min-width: 768px) {
+  .widget-contact img {
+    height: 3em; }
+
+  footer .btn-circle {
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    font-size: 35px; } }
+body {
+  font-family: "merriweatherregular", serif;
+  z-index: 1; }
+
+p {
+  font-size: 0.9em; }
+
+h5 {
+  font-family: "ralewaybold", sans-serif; }
 
 footer {
   background-color: #00C5C5;
@@ -142,14 +298,11 @@ footer {
   height: 300px;
   width: 300px; }
 
-@media (max-width: 480px) {
-  .navbar-custom .nav.navbar-nav {
-    background-color: #00C5C5; } }
-@media (min-width: 767px) {
-  .navbar-custom.top-nav-collapse {
-    border-bottom: 1px solid #00C5C5; }
+textarea {
+  resize: vertical; }
 
-  .navbar-custom ul.nav li a {
-    color: #676767; } }
+@media screen and (min-width: 992px) {
+  h2 {
+    font-size: 2.5em; } }
 
 /*# sourceMappingURL=main.css.map */

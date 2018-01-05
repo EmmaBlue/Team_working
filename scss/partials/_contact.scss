@@ -1,0 +1,32 @@
+//Contact
+
+.contact {
+
+  background-color: $primary;
+  font-family: $thinText;
+
+  input, textarea {
+
+    font-family: $thinText;
+
+  }
+
+  button {
+
+    background-color: $secondary;
+    font-family: $boldHeading;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+
+  form#contact-form .form-group label {
+
+    font-size: 1em;
+  }
+  #contact-form .form-group label {
+
+    font-size: 0.875em;
+  }
+}
