@@ -1,0 +1,84 @@
+//Services
+
+.home-section {
+
+  padding-top: 2em;
+  padding-bottom: 0em;
+}
+
+.section-heading {
+
+  i {
+
+    margin-bottom: 0px;
+  }
+
+  h2 {
+
+    margin: 0 0 5px;
+    font-family: $subheading;
+    color: $textColor;
+    font-size: 2.25em;
+  }
+
+  .fa {
+
+    color: $secondary;
+  }
+}
+
+@media screen and (min-width: 600px) {
+
+  #services {
+
+    p {
+
+      padding: 0px 1em;
+    }
+
+    .service-icon {
+
+      img {
+
+        height: 3.25em;
+      }
+    }
+  }
+
+}
+
+
+@media screen and (min-width: 768px) {
+
+  #services.home-section {
+
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+}
+
+@media screen and (min-width: 992px) {
+
+  #services {
+
+    h2 {
+
+      font-size: 2.5em;
+    }
+
+    .service-icon {
+
+      img {
+
+        height: 4.75em;
+      }
+    }
+  }
+
+  #services.home-section {
+
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
+
+}

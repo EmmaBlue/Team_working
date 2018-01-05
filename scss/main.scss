@@ -1,56 +1,17 @@
+@import 'base/_variables';
+@import 'partials/_nav';
+@import 'partials/_home';
+@import 'partials/_about';
+@import 'partials/_services';
+@import 'partials/_projects';
+@import 'partials/_contact';
+@import 'partials/_footer';
 
-@font-face {
-    font-family: 'ralewaymedium';
-    src: url('../fonts/raleway-medium-webfont.woff2') format('woff2'),
-         url('../fonts/raleway-medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-@font-face {
-    font-family: 'ralewayregular';
-    src: url('raleway-regular-webfont.woff2') format('woff2'),
-         url('raleway-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'merriweatherregular';
-    src: url('../fonts/merriweather-regular-webfont.woff2') format('woff2'),
-         url('../fonts/merriweather-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'ralewaybold';
-    src: url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
-         url('../fonts/raleway-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-//Variables
-
-$primary:#ffffff;
-$secondary: #00C5C5;
-$textColor: #676767;
-$selectedColor: #adc7de;
-$heading: 'ralewaymedium', sans-serif;
-$subheading:'merriweatherregular', serif;
-$boldHeading: 'ralewaybold', sans-serif;
-$regText: 'merriweatherregular', serif;
-$thinText: 'ralewayregular', sans-serif;
 
 body {
 
   font-family: $regText;
+  z-index: 1;
 }
 
 p {
@@ -61,194 +22,7 @@ h5 {
 
   font-family: $boldHeading;
 }
-//Navigation
 
-.navbar-header {
-
-  background-color: $secondary;
-  color: $primary;
-}
-
-.top-nav-collapse {
-
-  background-color: $secondary;
-  border-top: 5px solid $secondary;
-}
-
-.navbar {
-
-  border-bottom: none;
-}
-
-.navbar-nav {
-
-  margin: 0px -15px;
-}
-
-.navbar-custom ul.nav li a {
-
-  color: $primary;
-  font-family: $thinText;
-}
-
-.navbar-collapse {
-
-  border-top: none;
-}
-
-//Main Section
-#intro.intro {
-
-  background: url(../img/promo-mobile.jpg) no-repeat top center;
-  padding: 10em 0 0 0;
-
-  .slogan h4 {
-
-    font-family: $subheading;
-    text-shadow: none;
-    color: $textColor;
-    font-size: 0.8em;
-    text-align: center;
-    margin: 1em;
-  }
-}
-
-#mainArrow {
-
-  margin-top: 5em;
-  margin-bottom: 1em;
-}
-
-//Services
-
-.home-section {
-
-  padding-top: 2em;
-  padding-bottom: 0em;
-}
-
-.section-heading {
-
-  i {
-
-    margin-bottom: 0px;
-  }
-
-  h2 {
-
-    margin: 0 0 5px;
-    font-family: $subheading;
-    color: $textColor;
-    font-size: 2.25em;
-  }
-
-  .fa {
-
-    color: $secondary;
-  }
-}
-
-
-//Projects
-#projectPic {
-
-  height: 120px;
-  width: 200px;
-  background-color: $secondary;
-  border: 2px solid $primary;
-
-}
-
-#projectPic2 {
-
-  height: 120px;
-  width: 200px;
-  background-color: $secondary;
-  border: 2px solid $primary;
-
-}
-
-#projectPic3 {
-
-  height: 120px;
-  width: 200px;
-  background-color: $secondary;
-  border: 2px solid $primary;
-
-}
-
-//About
-
-#aboutDesc p {
-
-  font-family: $thinText;
-  color: $secondary;
-  font-size: 1.25em;
-}
-
-.inner {
-
-  h5 {
-
-    font-family: $heading;
-    color: $secondary;
-    font-size: 1.5em;
-    letter-spacing: 0px;
-
-  }
-
-  h6 {
-
-    margin-bottom: 0px;
-    font-family: $heading;
-
-
-  }
-  ul {
-    font-family: $subheading;
-    list-style: none;
-    text-align: center;
-    margin-left: 5px;
-
-    li {
-
-      text-align: left;
-      margin-left: 20px;
-    }
-
-
-  }
-
-  p {
-
-    text-align: left;
-  }
-
-}
-
-.boxed-grey {
-
-  border: 5px solid $primary;
-}
-//Contact
-
-.contact {
-
-  background-color: $primary;
-  font-family: $thinText;
-
-  input, textarea {
-
-    font-family: $thinText;
-
-  }
-
-  button {
-
-    background-color: $secondary;
-    font-family: $boldHeading;
-  }
-}
 
 footer {
 
@@ -270,23 +44,13 @@ footer {
   width: 300px;
 }
 
-@media (max-width:480px) {
+textarea { resize: vertical; }
 
-	.navbar-custom .nav.navbar-nav {
-    background-color: $secondary;
-	}
+@media screen and (min-width: 992px) {
+
+  h2 {
+
+    font-size: 2.5em;
+  }
 
 }
-
-  @media(min-width:767px) {
-
-      .navbar-custom.top-nav-collapse {
-          border-bottom: 1px solid $secondary;
-      }
-
-      .navbar-custom ul.nav li a {
-
-        color: $textColor;
-      }
-
-    }
