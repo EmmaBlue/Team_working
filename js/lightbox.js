@@ -45,9 +45,4 @@ jQuery(document).ready(function($) {
 		}
 
 	});
-
-	//Click anywhere on the page to get rid of lightbox window
-	// $('#lightbox').on('click', function() { // live is depecrated and will throw errors
-	//      $('#lightbox').hide();
-	// });
 });
