@@ -22,7 +22,7 @@ jQuery(document).ready(function($) {
 			$('#content').html('<img src="' + image_href + '" />');
 
 			//show lightbox window - you could use .show('fast') for a transition
-			$('#lightbox').show(fast);
+			$('#lightbox').show();
 		}
 
 		else { //#lightbox does not exist - create and insert (runs 1st time only)
@@ -38,13 +38,16 @@ jQuery(document).ready(function($) {
 
 			//insert lightbox HTML into page
 			$('body').append(lightbox);
+
+			$('#lightbox').on('click', function() { // live is depecrated and will throw errors
+			     $('#lightbox').hide();
+			});
 		}
 
 	});
 
 	//Click anywhere on the page to get rid of lightbox window
-	$('#lightbox').live('click', function() { //must use live, as the lightbox element is inserted into the DOM
-	     $('#lightbox').hide();
-	});
-
+	// $('#lightbox').on('click', function() { // live is depecrated and will throw errors
+	//      $('#lightbox').hide();
+	// });
 });
