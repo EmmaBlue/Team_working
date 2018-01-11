@@ -17,8 +17,25 @@
     height:100%;
     background-color: grey;
     text-align:center;
-    z-index: 2;
+    z-index: 400;
+
+    img {
+
+      height: 100px;
+      width: 100px;
+    }
 }
+
+.lightBut {
+
+  height: 10px;
+  width: 10px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 15px;
+}
+
 
 #lightbox p {
     text-align:right;
@@ -33,3 +50,5 @@
     -moz-box-shadow:0 0 25px #111;
     max-width:940px;
 }
+
+#content { margin-top: 0%; }
