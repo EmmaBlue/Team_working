@@ -239,7 +239,7 @@
   height: 100%;
   background-color: grey;
   text-align: center;
-  z-index: 2; }
+  z-index: 400; }
 
 #lightbox p {
   text-align: right;
@@ -252,6 +252,9 @@
   -webkit-box-shadow: 0 0 25px #111;
   -moz-box-shadow: 0 0 25px #111;
   max-width: 940px; }
+
+#content {
+  margin-top: 90px; }
 
 .contact {
   background-color: #ffffff;
