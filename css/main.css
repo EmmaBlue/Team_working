@@ -162,6 +162,9 @@
     #intro.intro #mainArrow {
       margin-top: 5%;
       height: 3em; } }
+#about.home-section {
+  padding-bottom: 0px; }
+
 #aboutDesc p {
   font-family: "ralewayregular", sans-serif;
   color: #00C5C5;
@@ -193,18 +196,20 @@
   #aboutDesc p {
     font-size: 1.5em; } }
 .home-section {
-  padding-top: 2em;
+  padding-top: 4em;
   padding-bottom: 0em; }
 
-.section-heading i {
-  margin-bottom: 0px; }
-.section-heading h2 {
-  margin: 0 0 5px;
-  font-family: "merriweatherregular", serif;
-  color: #676767;
-  font-size: 2.25em; }
-.section-heading .fa {
-  color: #00C5C5; }
+.section-heading {
+  padding-bottom: 1em; }
+  .section-heading i {
+    margin-bottom: 0px; }
+  .section-heading h2 {
+    margin: 0 0 5px;
+    font-family: "merriweatherregular", serif;
+    color: #676767;
+    font-size: 2.25em; }
+  .section-heading .fa {
+    color: #00C5C5; }
 
 @media screen and (min-width: 600px) {
   #services p {
@@ -252,6 +257,9 @@
   -webkit-box-shadow: 0 0 25px #111;
   -moz-box-shadow: 0 0 25px #111;
   max-width: 940px; }
+
+#contact.home-section {
+  padding-top: 3em; }
 
 .contact {
   background-color: #ffffff;
