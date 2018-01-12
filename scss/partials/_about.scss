@@ -52,15 +52,68 @@
 
 }
 
+.company-social li:hover {
+
+  opacity: 0.8;
+}
+
+#emmaPadding {
+
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.company-social a {
+
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+}
+
 .boxed-grey {
 
   border: 5px solid $primary;
 }
+
+#imageSet {
+
+  list-style-type: none;
+  padding-left: 0px;
+
+  li {
+
+  text-decoration: none;
+
+}
+
+  img {
+
+    margin-bottom: 20px;
+    width: 80%;
+  }
+}
+
 
 @media screen and (min-width: 1280px) {
 
   #aboutDesc p {
 
     font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px){
+
+  #imageSet img {
+
+    width: 75%;
+  }
+}
+
+@media screen and (min-width:768px) {
+
+  #imageSet img {
+
+    width: 80;
   }
 }
