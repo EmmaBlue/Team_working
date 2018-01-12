@@ -8,6 +8,36 @@
 
 }
 
+#seeMore a {
+
+  font-family: $heading;
+
+  font-size: 0.85em;
+  color: $secondary;
+}
+
+#seeMore  {
+
+  margin-top: 30px;
+
+}
+
+#seeMore:hover, #seeMore:active, #seeMore:focus {
+
+  opacity: 0.8;
+}
+
+@media screen and (max-width:413px) {
+
+  #seeMore a {
+
+    font-family: $heading;
+
+    font-size: 0.65em;
+    color: $secondary;
+  }
+
+}
 
 #lightbox {
     position:fixed; /* keeps the lightbox window in the current viewport */
@@ -147,7 +177,7 @@
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px){
 
   #paraList {
 
@@ -156,6 +186,86 @@
   }
 
 
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+
+  #paraList {
 
 
+    top: 87%;
+  }
+
+
+}
+
+@media screen and (min-width: 1200px) {
+
+  #paraList {
+
+
+    top: 80%;
+  }
+
+
+}
+
+@media screen and (min-width: 414px) and (max-width: 599px){
+
+  #lightbox p.close {
+    top: 80px;
+
+}
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px){
+
+  #lightbox p.close {
+    top: 100px;
+
+}
+}
+
+@media screen and (min-width: 768px){
+
+  #lightbox p.close {
+    top: 110px;
+
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  .prev, .next {
+    top:35%;
+
+}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px){
+
+  .prev, .next {
+    top:55%;
+
+}
+
+  #lightbox img {
+
+    max-width: 600px;
+    margin-top: 7%;
+  }
+}
+
+@media screen and (min-width: 1200px){
+
+  .prev, .next {
+    top:45%;
+
+}
+
+  #lightbox img {
+
+    max-width: 700px;
+    margin-top: 10%;
+  }
 }

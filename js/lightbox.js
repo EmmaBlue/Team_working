@@ -3,16 +3,15 @@ jQuery(document).ready(function($) {
   // global variables to use in several functions
   var current, size;
 
-  $('.lightbox_trigger').click(function(e) {
+  $('.trigger').click(function(e) {
 
 
     // grab source from clicked project
     var image_href = $(this).attr("src");
-		var text = ["This just got added", "Volvo", "BMW", "Huzzah!"];
 		console.log(image_href);
 
     // determine the index of clicked trigger
-    var slideNum = $('.lightbox_trigger').index(this);
+    var slideNum = $('.trigger').index(this);
 		//console.log(slideNum);
 
     // find out if #lightbox exists
@@ -43,8 +42,8 @@ jQuery(document).ready(function($) {
       $('body').append(lightbox);
 
 
-      // fill lightbox with .lightbox_trigger hrefs in #imageSet
-      $('#imageSet').find('.lightbox_trigger').each(function() {
+      // fill lightbox with .trigger srcs in #imageSet
+      $('#imageSet').find('.trigger').each(function() {
         var $href = $(this).attr('src');
         $('#slideshow ul').append(
           '<li class="imageHover">' +
@@ -65,7 +64,7 @@ jQuery(document).ready(function($) {
     }
 
 
-    // setting size based on number of objects in slideshow
+    // setting size based on amount of slideshow objects
     size = $('#slideshow ul > li').length;
 
     // hide all slide, then show the selected slide
@@ -80,12 +79,12 @@ jQuery(document).ready(function($) {
     current = slideNum;
   });
 
-  //Click anywhere on the page to get rid of lightbox window
-  $('body').on('click', '#lightbox', function() { // using .on() instead of .live(). more modern, and fixes event bubbling issues
+  //Click anywhere on the page to get rid of lightbox
+  $('body').on('click', '#lightbox', function() {
     $('#lightbox').fadeOut(300);
   });
 
-  // show/hide navigation when hovering over #slideshow
+  // show/hide navigation when hovering over the slider
   $('body').on(
     { mouseenter: function() {
       $('.navGal').fadeIn(300);
